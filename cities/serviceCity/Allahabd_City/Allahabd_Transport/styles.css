@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: #f5f5f5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:#f8f6f6;
+}
+.top-bar span {
+    font-size: 14px;
+}
+
+.top-bar nav a {
+    margin-left: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+.font-size {
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.header-text h1, .header-text h2 {
+    margin: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #ff5722;
+}
+
+.main-nav ul li {
+    margin: 0;
+    
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.about, .spvs-websites {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+.about h3, .spvs-websites h3 {
+    margin-top: 0;
+}
+
+.spvs-websites ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.spvs-websites ul li {
+    margin-bottom: 10px;
+}
+
+.spvs-websites ul li a {
+    text-decoration: none;
+    color: #ff5722;
+}
+
+
+/* ------- image corousel-------- */
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 600px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* ------- image corosuel End ------- */
+
+
+/* --------- About us page------- */
+
+
+
+.about-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1700px;
+  padding: 20px;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  background-color: #00bcd4;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+}
+
+.about-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.read-more-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+/*--------- Map & tour--------- */
+
+
+.tour-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 1740px; 
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+
+  overflow: hidden;
+}
+
+iframe {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+  border: 0;
+}
+
+.stats {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 300px;
+  max-width: 50%;
+  height: 500px;
+  background-color: #fff;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.stats :hover{
+  background:linear-gradient(135deg, #ff9800, #ff5722); ;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 300px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: #c3c0c0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item .icon {
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+.stat-item .number {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-item .label {
+  font-size: 1em;
+  color: #666;
+}
+
+/* ------- Travell Service------ */
+
+.citizen-section {
+  width: 100%;
+  max-width: 1700px; 
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fffdfd;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  color: #00A99D;
+  font-size: 30px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card p {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+
+
+
+
+
